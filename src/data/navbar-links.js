@@ -1,7 +1,7 @@
 export const NavbarLinks = [
   {
     title: "Home",
-    path: "/",
+    path: "https://gurukul.shihaantech.net/",
   },
   {
     title: "Catalog",

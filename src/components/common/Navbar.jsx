@@ -65,7 +65,7 @@ const Navbar = () => {
             {/* image */}
             <div>
                 <Link to={"/"} >
-                    <img src={Logo} alt="" width={160} height={32} loading='lazy' />
+                    <img src={Logo} alt="" width={50} height={32} loading='lazy' />
                 </Link>
             </div>
 
