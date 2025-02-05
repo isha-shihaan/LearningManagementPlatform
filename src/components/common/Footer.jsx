@@ -57,7 +57,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-3' >
                         {/* Logo */}
                         <div className='text-richblack-50 w-[90%] ' >
-                            <img src={Logo} alt=""  />
+                            <img src={Logo} alt="" height={200} width={90}  />
                         </div>
                         {/* company */}
                         <div className='space-y-3' >
