@@ -46,17 +46,17 @@ const UpdatePassword = () => {
 
   return (
     <form onSubmit={handleSubmit(passwordUpdate)} >
-        <div className='flex flex-col gap-6 rounded-lg border border-richblack-700 bg-richblack-800 p-8 px-12 ' >
-            <h3 className='font-semibold text-lg text-richblack-5'  >Password</h3>
+        <div className='flex flex-col gap-6 rounded-lg border border-black bg-white p-8 px-12 ' >
+            <h3 className='font-semibold text-lg text-black'  >Password</h3>
             <div className='flex flex-col lg:flex-row gap-6 justify-between ' >
                 <label className='flex flex-col gap-2 w-[100%] lg:w-[50%] relative ' >
-                    <p className='font-medium text-sm text-richblack-5' >Current Password</p>
+                    <p className='font-medium text-sm text-richblack-300' >Current Password</p>
                     <input
                         type={`${showOldPassword ? "text" : "password"}`}
                         name='oldPassword'
                         {...register("oldPassword", {required:true})}
                         placeholder='Enter Current Password'
-                        className='p-3 rounded-lg bg-richblack-700 CTAblackbutton font-medium text-base text-richblack-5'
+                        className='p-3 rounded-lg bg-white CTAblackbutton font-medium text-base text-black border border-black'
                     />
 
                     {/* if an error occur */}
@@ -75,13 +75,13 @@ const UpdatePassword = () => {
                 </label>
 
                 <lable className='flex flex-col  gap-2 w-[100%] lg:w-[50%] relative ' >
-                    <p className='font-medium text-sm text-richblack-5' >New Password</p>
+                    <p className='font-medium text-sm text-richblack-300' >New Password</p>
                     <input
                         type={`${showNewPassword ? "text" : "password"}`}
                         name='newPassword'
                         {...register("newPassword", {required:true})}
                         placeholder='Enter New Password'
-                        className='p-3 rounded-lg bg-richblack-700 CTAblackbutton font-medium text-base text-richblack-5'
+                        className='p-3 rounded-lg bg-white CTAblackbutton font-medium text-base text-black border border-black'
                     />
 
                     {/* if an error occur */}

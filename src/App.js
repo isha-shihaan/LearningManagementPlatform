@@ -34,7 +34,7 @@ function App() {
   const {user} = useSelector((state) => state.profile);
 
   return (
-    <div className="w-full min-h-screen bg-richblack-900 flex flex-col font-inter overflow-x-hidden overflow-y-auto " >
+    <div className="w-full min-h-screen bg-[#FFFFE0] flex flex-col font-inter overflow-x-hidden overflow-y-auto " >
       <Navbar/>
       
       <Routes>
