@@ -89,7 +89,7 @@ function SignupForm() {
       <form onSubmit={handleOnSubmit} className="flex w-full flex-col gap-y-4">
         <div className="flex gap-x-4">
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
               First Name <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -102,11 +102,11 @@ function SignupForm() {
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5 outline-none "
+              className="w-full border border-black rounded-[0.5rem] bg-white p-[12px] text-black outline-none "
             />
           </label>
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem]  text-black">
               Last Name <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -119,12 +119,12 @@ function SignupForm() {
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5 outline-none "
+              className="w-full  border border-black rounded-[0.5rem] bg-white p-[12px] text-black outline-none "
             />
           </label>
         </div>
         <label className="w-full">
-          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
             Email Address <sup className="text-pink-200">*</sup>
           </p>
           <input
@@ -137,12 +137,12 @@ function SignupForm() {
             style={{
               boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
             }}
-            className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5 outline-none "
+            className="w-full  border border-black rounded-[0.5rem]  bg-white p-[12px] text-black outline-none "
           />
         </label>
         <div className="flex gap-x-4">
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-Black">
               Create Password <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -155,7 +155,7 @@ function SignupForm() {
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-richblack-5 outline-none "
+              className="w-full border border-black rounded-[0.5rem]  bg-white p-[12px] text-black outline-none "
             />
             <span
               onClick={() => setShowPassword((prev) => !prev)}
@@ -169,7 +169,7 @@ function SignupForm() {
             </span>
           </label>
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-rblack">
               Confirm Password <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -182,7 +182,7 @@ function SignupForm() {
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-richblack-5 outline-none "
+              className="w-full border border-black rounded-[0.5rem]  bg-white p-[12px] text-black outline-none "
             />
             <span
               onClick={() => setShowConfirmPassword((prev) => !prev)}
@@ -198,7 +198,7 @@ function SignupForm() {
         </div>
         <button
           type="submit"
-          className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
+          className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-90 hover:bg-[#002868] hover:border-[#002868]  hover:text-white"
         >
           Create Account
         </button>
