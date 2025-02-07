@@ -210,4 +210,4 @@ function App() {
 }  
 
 export default App;
-// https://studynotion-edtech-project.vercel.app/view-course/647108f8eac761698a700ce1/section/647108ffeac761698a700ce6/sub-section/64710912eac761698a700ceb
+// https://Gurukul-edtech-project.vercel.app/view-course/647108f8eac761698a700ce1/section/647108ffeac761698a700ce6/sub-section/64710912eac761698a700ceb

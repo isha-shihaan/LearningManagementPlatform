@@ -26,7 +26,7 @@ const About = () => {
                     <h1 className='text-richblack-5 font-semibold text-4xl  ' >Driving Innovation in Online Education for a <HighLightedText text={"Brighter Future"} /></h1>
 
                     {/* sub heading */}
-                    <p className='font-medium text-lg text-richblack-300' >Studynotion is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community.</p>
+                    <p className='font-medium text-lg text-richblack-300' >Gurukul is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community.</p>
                 </div>
 
                 {/* spaces for img */}

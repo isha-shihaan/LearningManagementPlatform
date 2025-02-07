@@ -182,7 +182,7 @@ const Home = () => {
                     </div>
 
                     <div className='flex flex-col gap-3 w-[100%] lg:w-[45%] ' >
-                        <p className=' font-inter font-medium text-base text-richblack-700 ' >The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
+                        <p className=' font-inter font-medium text-base text-richblack-700 ' >The modern Gurukul is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
                         <div className='pt-9' >
                             <CTAbutton active={true} linkto={"/signup"} >
                                 Learn More
