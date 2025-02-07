@@ -175,17 +175,17 @@ const CourseInformationForm = () => {
   }
 
   return (
-    <div className='border border-richblack-700 bg-richblack-800 rounded-lg p-6 mt-16 mb-10 ' >
+    <div className='border border-black bg-white rounded-lg p-6 mt-16 mb-10 ' >
         <form onSubmit={handleSubmit(onSubmit)}  className='flex flex-col gap-6' >
           {/* course title */}
           <label className='flex flex-col gap-1' >
-            <p className='text-base text-richblack-5' >Course Title<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >Course Title<sup className='text-pink-400' > *</sup></p>
             <input 
               name='courseTitle'
               type="text"
               placeholder='Enter Course Title'
               {...register("courseTitle",{required:true})}
-              className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '
+              className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black  outline-none '
             />
 
             {/* if error occur*/}
@@ -198,11 +198,11 @@ const CourseInformationForm = () => {
 
           {/* course discription */}
           <label className='flex flex-col gap-1' >
-            <p className='text-base text-richblack-5' >Course Short Description<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >Course Short Description<sup className='text-pink-400' > *</sup></p>
             <textarea
               placeholder='Enter Description'
               {...register("courseShortDesc", {required:true})}
-              className=' rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '
+              className=' rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none '
               rows={5}
             />
 
@@ -216,12 +216,12 @@ const CourseInformationForm = () => {
 
           {/* course price */}
           <label className='relative flex flex-col gap-1'  >
-            <p className='text-base text-richblack-5' >Price<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >Price<sup className='text-pink-400' > *</sup></p>
             <input 
               type="text"
               placeholder='Enter Course Price'
               {...register("coursePrice",{required:true})}
-              className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none pl-12'
+              className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none pl-12'
             />
             <HiOutlineCurrencyRupee className='absolute text-richblack-400 text-2xl left-3 top-10 ' />
             {/* error */}
@@ -234,11 +234,11 @@ const CourseInformationForm = () => {
 
           {/* course category */}
           <label className=' flex flex-col gap-1' >
-            <p className='text-base text-richblack-5' >Course Category<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >Course Category<sup className='text-pink-400' > *</sup></p>
             <select
               defaultValue=""
               {...register("courseCategory", {required:true})}
-              className=' bg-richblack-700 outline-none rounded-lg p-3 inputShadow font-medium text-base text-richblack-5 '
+              className=' bg-white outline-none rounded-lg p-3 inputShadow font-medium text-base text-black border border-black '
             >
               {/* default option for instructing select a categories */}
               <option value="" >Choose a Category</option>
@@ -284,11 +284,11 @@ const CourseInformationForm = () => {
 
           {/* benefits of the course */}
           <label className=' flex flex-col gap-1' >
-            <p className='text-base text-richblack-5' >Benefits of the course<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >Benefits of the course<sup className='text-pink-400' > *</sup></p>
             <textarea
               placeholder='Enter Benefits of the course'
               {...register("courseBenefits", {required:true})}
-              className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '
+              className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none '
               rows={5}
             />
 
@@ -320,7 +320,7 @@ const CourseInformationForm = () => {
                   type='button'
                   onClick={() => dispatch(setStep(2))}
                   disabled={loading}
-                  className='flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900'
+                  className='flex cursor-pointer items-center gap-x-2 rounded-md bg-white border border-black py-[8px] px-[20px] font-semibold text-black hover:bg-[#002868] hover:border-[#002868]  hover:text-white'
                 >
                   Continue Wihout Saving
                 </button>

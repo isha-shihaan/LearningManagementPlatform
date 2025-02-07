@@ -56,19 +56,19 @@ const CoursesTable = ({ courses, setCourses }) => {
 
   return (
     <div>
-        <Table className='rounded-xl border border-richblack-800' >
+        <Table className='rounded-xl bg-white border border-black' >
           <Thead>
-            <Tr className=' flex items-center justify-start gap-9 py-2 px-8 border-b border-richblack-800  ' >
-              <Th className='font-medium text-sm text-richblack-100 w-[70%] text-start ' >
+            <Tr className=' flex items-center justify-start gap-9 py-2 px-8 border-b border-black  ' >
+              <Th className='font-medium text-sm text-black w-[70%] text-start ' >
                 COURSES
               </Th>
-              <Th className='font-medium text-sm text-richblack-100' >
+              <Th className='font-medium text-sm text-black' >
                 DURATION
               </Th>
-              <Th className='font-medium text-sm text-richblack-100' >
+              <Th className='font-medium text-sm text-black' >
                 PRICE
               </Th>
-              <Th className='font-medium text-sm text-richblack-100' >
+              <Th className='font-medium text-sm text-black' >
                 ACTIONS
               </Th>
             </Tr>
@@ -77,7 +77,7 @@ const CoursesTable = ({ courses, setCourses }) => {
             {
               courses.length === 0 ? (
                 <Tr className='flex items-center justify-center py-10 ' >
-                    <Td className='text-richblack-5 text-2xl font-medium' >
+                    <Td className='text-black text-2xl font-medium' >
                         No Courses Found
                     </Td>
                 </Tr>
@@ -90,9 +90,9 @@ const CoursesTable = ({ courses, setCourses }) => {
                             className='h-[150px] w-[220px] rounded-lg object-cover '
                           />
                           <div className='flex flex-col gap-3 justify-between ' >
-                            <p className='font-semibold text-xl text-richblack-5' >{course?.courseName}</p>
+                            <p className='font-semibold text-xl text-black' >{course?.courseName}</p>
                             <p className='font-normal text-sm text-richblack-400' >{course?.courseDescription}</p>
-                            <p className='font-medium text-sm text-richblack-25' >Created: {formatDate(course.createdAt)}</p>
+                            <p className='font-medium text-sm text-richblack-300' >Created: {formatDate(course.createdAt)}</p>
                             {
                               course.status === COURSE_STATUS.DRAFT ? (
                                 <div className='py-1 px-2 flex gap-2 rounded-2xl bg-richblack-700 items-center w-fit ' >
@@ -100,7 +100,7 @@ const CoursesTable = ({ courses, setCourses }) => {
                                   <p className='font-semibold text-[12px] text-pink-100' >Drafted</p>
                                 </div>
                               ) : (
-                                <div className='py-1 px-2 flex gap-2 rounded-2xl bg-richblack-700 items-center w-fit ' >
+                                <div className='py-1 px-2 flex gap-2 rounded-2xl bg-blue-300 items-center w-fit ' >
                                   <FaCheckCircle size={"14px"} className='text-yellow-100' />
                                   <p className='font-semibold text-[12px] text-yellow-100' >Published</p>
                                 </div>
@@ -110,12 +110,12 @@ const CoursesTable = ({ courses, setCourses }) => {
                       </Td>
 
                       {/* right */}
-                      <Td className='font-medium text-sm text-richblack-100 w-[7%] ' >
+                      <Td className='font-medium text-sm text-richblack-300 w-[7%] ' >
                         2h 30min
                       </Td>
 
                       <Td>
-                        <span className='font-medium text-sm text-richblack-100' >₹{course.price}</span>
+                        <span className='font-medium text-sm text-black' >₹{course.price}</span>
                       </Td>
 
                       <Td className=' ml-2 flex gap-2' >

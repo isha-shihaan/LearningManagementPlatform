@@ -56,17 +56,17 @@ const NestedView = ({handleChangeEditSSectionName}) => {
     }
 
   return (
-    <div className='  mt-5 border border-richblack-600 rounded-lg p-8 bg-richblack-700 ' >
+    <div className='  mt-5 border border-black rounded-lg p-8 bg-white ' >
          <div className='flex flex-col gap-5' >
             {
                 course?.courseContent?.map((section) => (
                     <details key={section?._id}  open>
-                        <summary className='list-none pb-1 cursor-pointer flex justify-between items-center border-b-2 border-richblack-600' >
+                        <summary className='list-none pb-1 cursor-pointer flex justify-between items-center border-b-2 border-black' >
                             {/* left part */}
                             <div className='flex items-center gap-3 ' >
                                 {/* icon and name */}
-                                <RxDropdownMenu size={"30px"} className='text-richblack-50' />
-                                <p className='font-semibold text-base text-richblack-50' >{section?.sectionName}</p>
+                                <RxDropdownMenu size={"30px"} className='text-black' />
+                                <p className='font-semibold text-base text-black' >{section?.sectionName}</p>
                             </div>
 
                             {/* right part */}

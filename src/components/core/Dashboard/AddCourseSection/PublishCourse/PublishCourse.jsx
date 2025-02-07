@@ -70,9 +70,9 @@ const PublishCourse = () => {
   }
 
   return (
-    <div className='rounded-lg border border-[#2C333F] p-6 bg-[#161D29] flex flex-col gap-6 mt-16 ' >
+    <div className='rounded-lg border border-[#2C333F] p-6 bg-white flex flex-col gap-6 mt-16 ' >
         {/* heading */}
-        <p className='font-semibold text-2xl text-[#F1F2FF]' >Publish Course</p>
+        <p className='font-semibold text-2xl text-black' >Publish Course</p>
 
         {/* form */}
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-8' >
@@ -80,7 +80,7 @@ const PublishCourse = () => {
             <input 
               type='checkbox'
               {...register("public")}
-              className=' text-[#585D69] h-4 w-4 rounded bg-richblack-500 '
+              className=' text-black h-4 w-4 rounded bg-white '
             />
             <span className='ml-2 font-medium text-base text-[#6E727F] ' >Make this Course as Public</span>
           </label>
@@ -92,7 +92,7 @@ const PublishCourse = () => {
               type='button'
               disabled={loading}
               onClick={() => dispatch(setStep(2))}
-              className='flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900'
+              className='flex cursor-pointer items-center gap-x-2 rounded-md bg-white py-[8px] px-[20px] font-semibold text-black border border-black hover:bg-[#002868] hover:border-[#002868]  hover:text-white'
             >
               <IoIosArrowBack />
               Back

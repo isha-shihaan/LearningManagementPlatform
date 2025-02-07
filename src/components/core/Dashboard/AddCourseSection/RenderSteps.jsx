@@ -34,7 +34,7 @@ const RenderSteps = () => {
           steps.map((element) => (
             <div className='flex items-center ' key={element.id} >
               {/* number */}
-              <div className={`${ element.id === step ? "border-yellow-50 bg-yellow-900 font-semibold " : "border-richblack-700 bg-richblack-800 font-normal text-richblack-300 "} aspect-square rounded-full border h-9 w-9 flex justify-center items-center  text-lg
+              <div className={`${ element.id === step ? "border-yellow-50 bg-yellow-900 font-semibold " : "border-richblack-700 bg-richblack-800 font-normal text-white "} aspect-square rounded-full border h-9 w-9 flex justify-center items-center  text-lg
                                 ${element.id < step ? "bg-yellow-50" : ""} `} >
                 {
                   step > element.id ? (<FaCheck  color='black'/>) : (element.id)
@@ -44,7 +44,7 @@ const RenderSteps = () => {
               {/* dashed line */}
               {
                 element.id !== 3 && (
-                  <div className={` ${ step > element.id ? "border-yellow-50" : "border-richblack-600" } border-t-2 border-dashed border-richblack-600 w-[200px] `} ></div>
+                  <div className={` ${ step > element.id ? "border-yellow-50" : "border-black" } border-t-2 border-dashed border-richblack-600 w-[200px] `} ></div>
                 )
               }
             </div>
@@ -57,7 +57,7 @@ const RenderSteps = () => {
         {
           steps.map( (element, index) => (
             <div key={index} className='min-w-[129px]  ' >
-              <p className={` ${step >= element.id ? "text-richblack-5" : " text-richblack-200 "} text-sm font-medium`} >{element.title}</p>
+              <p className={` ${step >= element.id ? "text-[#002868] " : " text-black "} text-sm font-medium`} >{element.title}</p>
             </div>
           ) )
         }

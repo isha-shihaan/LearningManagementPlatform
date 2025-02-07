@@ -116,20 +116,20 @@ const SubSectionModal = ({ modalData, setModalData, add = false,  view = false, 
 
   return (
     <div className=' fixed inset-0  z-[1000] h-screen w-screen overflow-auto bg-white bg-opacity-10 backdrop-blur-sm flex items-center justify-center' >
-        <div className=' mt-72 mb-10 2xl:my-10 w-11/12 max-w-[700px] border border-richblack-400 rounded-lg' >
+        <div className=' mt-72 mb-10 2xl:my-10 w-11/12 max-w-[700px] border border-black rounded-lg' >
             {/* heading and cross button */}
-            <div className='flex justify-between items-center bg-richblack-700 py-4 px-6 rounded-t-lg ' >
-                <p className='font-semibold text-lg text-richblack-5' >{add ? ("Adding Lecture") : (view ? ("Viewing Lecture") : edit ? ("Editing Lecture") : ("") )}</p>
+            <div className='flex justify-between items-center bg-white py-4 px-6 rounded-t-lg ' >
+                <p className='font-semibold text-lg text-black' >{add ? ("Adding Lecture") : (view ? ("Viewing Lecture") : edit ? ("Editing Lecture") : ("") )}</p>
                 <button
                     type='button'
                     onClick={ () => (!loading && (setModalData(null))) }
                 >
-                    <RxCross2 size={"24px"} className='text-richblack-5' />
+                    <RxCross2 size={"24px"} className='text-black' />
                 </button>
             </div>
 
             {/* form */}
-            <form onSubmit={handleSubmit(onSubmit)} className='bg-richblack-800 p-8 rounded-b-lg flex flex-col gap-8 ' >
+            <form onSubmit={handleSubmit(onSubmit)} className='bg-white p-8 rounded-b-lg flex flex-col gap-8 ' >
             
                 {/* video field */}
                 <Upload
@@ -146,11 +146,11 @@ const SubSectionModal = ({ modalData, setModalData, add = false,  view = false, 
                 {/* title field */}
                 <div>
                     <label className='flex flex-col gap-1' >
-                        <p className='text-sm text-richblack-5' >Lecture Title <sup className='text-pink-400' > *</sup> </p>
+                        <p className='text-sm text-black' >Lecture Title <sup className='text-pink-400' > *</sup> </p>
                         <input
                             placeholder='Enter Lecture Title'
                             {...register("lectureTitle", {required:true})}
-                            className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '  
+                            className='rounded-lg p-3 bg-white border border-black inputShadow font-medium text-base text-black outline-none '  
                         />
 
                         {/* error */}
@@ -165,11 +165,11 @@ const SubSectionModal = ({ modalData, setModalData, add = false,  view = false, 
                 {/* description field */}
                 <div>
                     <label className='flex flex-col gap-1' >
-                        <p className='text-sm text-richblack-5' >Lecture Description <sup className='text-pink-400' > *</sup> </p>
+                        <p className='text-sm text-black' >Lecture Description <sup className='text-pink-400' > *</sup> </p>
                         <textarea
                             placeholder='Enter Lecture Description'
                             {...register("lectureDesc", {required:true})}
-                            className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none min-h-[130px]'
+                            className='rounded-lg p-3 bg-white border border-black inputShadow font-medium text-base text-black outline-none min-h-[130px]'
 
                         />
                     </label>
