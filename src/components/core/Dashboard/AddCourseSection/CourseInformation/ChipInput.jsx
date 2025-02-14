@@ -57,13 +57,13 @@ const ChipInput = ({label, name, placeholder, register, errors, setValue, getVal
 
         <label className='flex flex-col gap-1' >
             {/* lable */}
-            <p className='text-base text-richblack-5' >{label}<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >{label}<sup className='text-pink-400' > *</sup></p>
 
             {/* chip data */}
             <div className='flex flex-wrap' >
                 {
                     tagList.map((element, index) => (
-                        <div key={index} className='m-1 w-fit flex items-center gap-2 rounded-full bg-yellow-400 px-2 py-1 text-sm text-richblack-5  ' >
+                        <div key={index} className='m-1 w-fit flex items-center gap-2 rounded-full bg-yellow-100 px-2 py-1 text-sm text-black  ' >
                             <p>{element}</p>
                             <button
                                 type='button'
@@ -84,7 +84,7 @@ const ChipInput = ({label, name, placeholder, register, errors, setValue, getVal
                 placeholder={placeholder}
                 onChange={(e) => setTag(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '
+                className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none '
 
             />
 

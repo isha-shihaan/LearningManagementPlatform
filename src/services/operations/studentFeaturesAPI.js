@@ -54,7 +54,7 @@ export const buyCourse = async (token, courses, userDetails, navigate, dispatch)
             currency:orderResponse?.data?.paymentResponse?.currency,
             amount:`${orderResponse?.data?.paymentResponse?.amount}`,
             order_id:orderResponse?.data?.paymentResponse?.id,
-            name:"StudyNotion",
+            name:"Gurukul",
             description:"Thank You for Purchasing the Course",
             image:rzp_logo,
             prefill:{

@@ -36,8 +36,8 @@ const ForgotPassword = () => {
           (
             <div className='flex flex-col gap-5 w-[33%]  ' >
               <div className='flex flex-col gap-3' >
-                <h1 className='text-richblack-5 font-inter font-semibold text-3xl ' >{emailSend ? "Check email" : "Reset your password"}</h1>
-                <p className='text-richblack-100 font-normal text-lg font-inter ' >{emailSend ? `We have sent the reset email to  ${email}` : "Have no fear. We’ll email you instructions to reset your password. If you dont have access to your email we can try account recovery"}</p>
+                <h1 className='text-black font-inter font-semibold text-3xl ' >{emailSend ? "Check email" : "Reset your password"}</h1>
+                <p className='text-richblack-300 font-normal text-lg font-inter ' >{emailSend ? `We have sent the reset email to  ${email}` : "Have no fear. We’ll email you instructions to reset your password. If you dont have access to your email we can try account recovery"}</p>
               </div>
 
               {/* input feild */}
@@ -47,7 +47,7 @@ const ForgotPassword = () => {
                 (
                   <form action="">
                     <label className='flex flex-col gap-2' >
-                      <p className='font-normal text-sm text-richblack-5 flex flex-row gap-1 ' >Email Address<span className='text-pink-200 text-sm font-normal' >*</span></p>
+                      <p className='font-normal text-sm text-black flex flex-row gap-1 ' >Email Address<span className='text-pink-200 text-sm font-normal' >*</span></p>
                         <input 
                           required
                           type='email'
@@ -55,7 +55,7 @@ const ForgotPassword = () => {
                           value={email}
                           onChange={(event) => setEmail(event.target.value)}
                           placeholder='Enter your email'
-                          className='bg-richblack-800 p-3 rounded-lg inputShadow text-base font-medium text-richblack-5 outline-none '
+                          className='bg-white border border-black p-3 rounded-lg inputShadow text-base font-medium text-black outline-none  '
                         />
                       </label>
                   </form>                      
@@ -64,7 +64,7 @@ const ForgotPassword = () => {
 
               {/* button */}
               <div className='flex flex-col gap-3  ' >
-                <button onClick={handleOnSubmit} className='bg-yellow-50 p-3 rounded-lg text-base font-medium text-richblack-900' >
+                <button onClick={handleOnSubmit} className='bg-yellow-50 p-3 rounded-lg text-base font-medium text-richblack-900 hover:bg-[#002868] hover:border-[#002868]  hover:text-white' >
                   {
                     emailSend ? "Resend email" : "Reset Password"
                   }

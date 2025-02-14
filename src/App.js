@@ -34,7 +34,7 @@ function App() {
   const {user} = useSelector((state) => state.profile);
 
   return (
-    <div className="w-full min-h-screen bg-richblack-900 flex flex-col font-inter overflow-x-hidden overflow-y-auto " >
+    <div className="w-full min-h-screen bg-[#FFFFE0] flex flex-col font-inter overflow-x-hidden overflow-y-auto " >
       <Navbar/>
       
       <Routes>
@@ -210,4 +210,4 @@ function App() {
 }  
 
 export default App;
-// https://studynotion-edtech-project.vercel.app/view-course/647108f8eac761698a700ce1/section/647108ffeac761698a700ce6/sub-section/64710912eac761698a700ceb
+// https://Gurukul-edtech-project.vercel.app/view-course/647108f8eac761698a700ce1/section/647108ffeac761698a700ce6/sub-section/64710912eac761698a700ceb

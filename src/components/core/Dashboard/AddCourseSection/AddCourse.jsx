@@ -5,7 +5,7 @@ const AddCourse = () => {
   return (
     <div className='flex flex-col xl:flex-row text-richblack-5 w-full items-start gap-6 mt-10 ' >
         <div className=' w-[100%] xl:w-[58%] flex flex-col gap-14 '>
-            <h1 className='text-3xl font-medium' >Add Course</h1>
+            <h1 className='text-3xl text-black font-bold' >Add Course</h1>
             <div>
                 <RenderSteps/>
             </div>

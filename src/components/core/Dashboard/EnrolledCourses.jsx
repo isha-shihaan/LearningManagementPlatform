@@ -29,7 +29,7 @@ const EnrolledCourses = () => {
 
   return (
     <div className='py-10 flex flex-col gap-10 ' >
-        <h1 className='font-medium text-3xl text-richblack-5' >Enrolled Courses</h1>
+        <h1 className='font-bold text-3xl  text-black' >Enrolled Courses</h1>
 
         {
             enrolledCourses ? (
@@ -84,7 +84,7 @@ const EnrolledCourses = () => {
                 ) 
                 : (
                     <div className='flex items-center justify-center p-20 ' >
-                        <p className='font-medium text-3xl text-[#c3c4c7]' >
+                        <p className='font-medium text-3xl text-black' >
                             You have not enrolled in any course yet.
                         </p>
                     </div>

@@ -19,7 +19,7 @@ const Sidebar = () => {
   const {user} = useSelector((state) => state.profile);
 
   return (
-    <div className='h-full max-w-[222px] flex flex-col gap-5 border-r border-richblack-700 bg-richblack-800 py-10' >
+    <div className='h-full max-w-[222px] flex flex-col gap-5 border-r  border-richblack-700  py-10' >
           {/* upper */}
           <div className='flex flex-col ' >
             {
@@ -55,7 +55,7 @@ const Sidebar = () => {
               btn2Handler:() => setConfirmationModal(null),
             })}
             
-            className='flex gap-3 py-2 px-8 items-center text-richblack-300 '
+            className='flex gap-3 py-2 px-8 items-center text-black '
             >
               <VscSignOut />
               <p>Logout</p>

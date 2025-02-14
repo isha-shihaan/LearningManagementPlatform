@@ -66,8 +66,8 @@ const UpdatePassword = () => {
             <div className=' flex flex-col gap-6 w-[32%] ' >
 
               <div className='flex flex-col gap-3 ' >
-                <h1 className='font-semibold text-3xl text-richblack-5 ' >{ passwordUpdated ? "Reset complete!" : "Choose  new password" }</h1>
-                <p className='font-normal text-lg text-richblack-100 ' >{ passwordUpdated ? `All done! We have sent an email to ${email} to confirm` : "Almost done. Enter your new password and your all set."}</p>
+                <h1 className='font-semibold text-3xl text-black ' >{ passwordUpdated ? "Reset complete!" : "Choose  new password" }</h1>
+                <p className='font-normal text-lg text-richblack-300 ' >{ passwordUpdated ? `All done! We have sent an email to ${email} to confirm` : "Almost done. Enter your new password and your all set."}</p>
               </div>
 
               {/* form */}
@@ -76,7 +76,7 @@ const UpdatePassword = () => {
                   <form className='flex flex-col gap-5' >
                     {/* password */}
                     <label className='flex flex-col gap-2 relative ' >
-                      <p className='flex gap-1 font-normal text-sm text-richblack-5' >New password<span className='text-pink-200 text-sm font-normal' >*</span></p>
+                      <p className='flex gap-1 font-normal text-sm text-black' >New password<span className='text-pink-200 text-sm font-normal' >*</span></p>
                       <input
                         required
                         type={showPassword? "text" : "password"}
@@ -84,7 +84,7 @@ const UpdatePassword = () => {
                         value={formData.password}
                         onChange={changeHandler}
                         placeholder='Enter your password'
-                        className='bg-richblack-800 p-3 rounded-lg inputShadow text-base font-medium text-richblack-5 outline-none'
+                        className='bg-white p-3 rounded-lg inputShadow text-base font-medium text-black border border-black outline-none'
                       />
 
                       {/* visible ans unvisible eye */}
@@ -97,7 +97,7 @@ const UpdatePassword = () => {
 
                     {/* confirm password */}
                     <label className='relative flex flex-col gap-2 ' >
-                      <p className='flex gap-1 font-normal text-sm text-richblack-5' >Confirm new password<span className='text-pink-200 text-sm font-normal' >*</span></p>
+                      <p className='flex gap-1 font-normal text-sm text-black' >Confirm new password<span className='text-pink-200 text-sm font-normal' >*</span></p>
                       <input
                         required
                         type={showConfirmPassword ? "text" : "password"}
@@ -105,7 +105,7 @@ const UpdatePassword = () => {
                         value={formData.confirmPassword}
                         onChange={changeHandler}
                         placeholder='Enter confirm password'
-                        className='bg-richblack-800 p-3 rounded-lg inputShadow text-base font-medium text-richblack-5 outline-none'
+                        className='bg-white p-3 rounded-lg inputShadow text-base font-medium text-black border border-black outline-none'
                       />
 
                       {/* visible ans unvisible eye */}
@@ -121,7 +121,7 @@ const UpdatePassword = () => {
 
               {/* button */}
               <div className='flex flex-col gap-3' >
-                <button onClick={ passwordUpdated ? () => navigate("/login") : submitHandler} className='bg-yellow-50 p-3 rounded-lg text-base font-medium ' >
+                <button onClick={ passwordUpdated ? () => navigate("/login") : submitHandler} className='bg-yellow-50 p-3 rounded-lg text-base font-medium hover:bg-[#002868] hover:border-[#002868]  hover:text-white' >
                   { passwordUpdated ? "Return to login" : "Reset Password" }
                 </button>
 

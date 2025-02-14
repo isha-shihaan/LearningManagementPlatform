@@ -20,7 +20,7 @@ const InstructorSection = () => {
                 </h2>
                 {/* subheading */}
                 <p className='font-medium text-lg text-richblack-300 w-[90%] ' >
-                    Instructors from around the world teach millions of students on StudyNotion. We provide the tools and skills to teach what you love.
+                    Instructors from around the world teach millions of students on Gurukul. We provide the tools and skills to teach what you love.
                 </p>
 
                 {/* button */}

@@ -114,18 +114,18 @@ const CourseBuilder = () => {
   }
 
   return (
-    <div className='border border-richblack-700 bg-richblack-800 rounded-lg p-6 mt-16 mb-10 ' >
-         <h3 className='font-semibold text-2xl text-richblack-5' >Course Builder</h3>
+    <div className='border border-black bg-white rounded-lg p-6 mt-16 mb-10 ' >
+         <h3 className='font-semibold text-2xl text-black' >Course Builder</h3>
          <form onSubmit={handleSubmit(onSubmit)} >
             {/* input */}
             <div className='mt-7 mb-4 ' >
               <label className='flex flex-col gap-1' >
-                <p className='text-base text-richblack-5' >Section Name <sup className='text-pink-400' > *</sup></p>
+                <p className='text-base text-black' >Section Name <sup className='text-pink-400' > *</sup></p>
                 <input 
                   type="text"
                   placeholder='Add a section to build your course'
                   {...register("sectionName", {required:true})}
-                  className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none '
+                  className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none '
                 />
 
 
@@ -156,7 +156,7 @@ const CourseBuilder = () => {
                   <button
                     type='button'
                     onClick={cancleEdit}
-                    className='text-sm text-richblack-300 underline'
+                    className='text-sm text-black underline'
                   >
                     Cancle Edit
                   </button>
@@ -187,7 +187,7 @@ const CourseBuilder = () => {
             <button 
               type='button'
               onClick={goToBack}
-              className='flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900'
+              className='flex cursor-pointer items-center gap-x-2 rounded-md bg-white py-[8px] px-[20px] font-semibold text-black border border-black hover:bg-[#002868] hover:border-[#002868]  hover:text-white'
             >
               Back
             </button>

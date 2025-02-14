@@ -53,12 +53,12 @@ const RequirementField = ({label, register, errors, name, setValue, getValues}) 
   return (
     <div>
         <label className=' flex flex-col items-start gap-1' >
-            <p className='text-base text-richblack-5' >{label}<sup className='text-pink-400' > *</sup></p>
+            <p className='text-base text-black' >{label}<sup className='text-pink-400' > *</sup></p>
             <input 
                 type="text" 
                 value={requirement}
                 onChange={(e) => setRequirement(e.target.value)}
-                className='rounded-lg p-3 bg-richblack-700 inputShadow font-medium text-base text-richblack-5 outline-none w-full'
+                className='rounded-lg p-3 bg-white inputShadow font-medium text-base text-black border border-black outline-none w-full'
             />
 
             {/* add button */}
@@ -75,11 +75,11 @@ const RequirementField = ({label, register, errors, name, setValue, getValues}) 
                 {
                     requirementList.length > 0 && (requirementList.map( (element, index) => (
                         <li key={index} className='flex gap-2 items-center ' >
-                            <p className='text-richblack-5' >{element}</p>
+                            <p className='text-black' >{element}</p>
                             <button
                                 type='button'
                                 onClick={ () => handleRemoveRequirement(index)}
-                                className='text-xs text-richblack-300 '
+                                className='text-xs text-yellow-100 '
                             >
                                 clear
                             </button>

@@ -27,7 +27,7 @@ const MyCourses = () => {
   return (
     <div className='pb-10' >
         <div className='flex items-center justify-between py-11  ' >
-            <h1 className='font-medium text-3xl text-richblack-5 ' >My Courses</h1>
+            <h1 className='font-bold text-3xl text-black ' >My Courses</h1>
             <IconBtn 
                 onclick={() => navigate("/dashboard/add-course")}
             >

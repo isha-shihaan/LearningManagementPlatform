@@ -1,9 +1,9 @@
-# StudyNotion
+# Gurukul
 
-Study Notion is an ED Tech (Education Technology) web application developed using the MERN stack. StudyNotion is an innovative EdTech platform where instructors can upload their courses and track their progress through visually appealing pie charts created using the Chart.js npm package. The website is built on ReactJS, TailwindCSS, and with backend support provided by NodeJS (ExpressJs) and MongoDB. For payment processing, StudyNotion utilizes Razorpay. Media data is securely stored on Cloudinary servers. Additionally, the website integrates Dicebear's API to automatically generate unique profile pictures for users.
+Study Notion is an ED Tech (Education Technology) web application developed using the MERN stack. Gurukul is an innovative EdTech platform where instructors can upload their courses and track their progress through visually appealing pie charts created using the Chart.js npm package. The website is built on ReactJS, TailwindCSS, and with backend support provided by NodeJS (ExpressJs) and MongoDB. For payment processing, Gurukul utilizes Razorpay. Media data is securely stored on Cloudinary servers. Additionally, the website integrates Dicebear's API to automatically generate unique profile pictures for users.
 
 ## System Architecture
-![architecture](https://github.com/Abhay-yadav966/StudyNotion/assets/115336330/4d0f609e-feac-4265-aa82-52a6a1cf5aad)
+![architecture](https://github.com/Abhay-yadav966/Gurukul/assets/115336330/4d0f609e-feac-4265-aa82-52a6a1cf5aad)
 
 ## Features
 - User Authentication: Study Notion provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
@@ -23,19 +23,19 @@ Study Notion is an ED Tech (Education Technology) web application developed usin
 - Profile Picture Generation: Dicebear API
 
 ## Swagger Documentation
-The Swagger documentation for the StudyNotion backend is available at the following link:  
-[Swagger API Documentation](https://studynotion-edtechplatform-production.up.railway.app/api-docs/)
+The Swagger documentation for the Gurukul backend is available at the following link:  
+[Swagger API Documentation](https://Gurukul-edtechplatform-production.up.railway.app/api-docs/)
 
 ### Swagger Doc Screenshot
-![Swagger Documentation](![studynotion-edtechplatform-production up railway app_api-docs_](https://github.com/user-attachments/assets/aee45358-5df5-4de7-8dd3-6f9281eeadfc)
+![Swagger Documentation](![Gurukul-edtechplatform-production up railway app_api-docs_](https://github.com/user-attachments/assets/aee45358-5df5-4de7-8dd3-6f9281eeadfc)
 ) <!-- Add your Swagger doc image here -->
 
 ## Screenshots
-![Screenshot (198)](https://github.com/Abhay-yadav966/StudyNotion/assets/115336330/9412db4c-0d21-405b-967c-3e39c5c5c534)
+![Screenshot (198)](https://github.com/Abhay-yadav966/Gurukul/assets/115336330/9412db4c-0d21-405b-967c-3e39c5c5c534)
 ![Screenshot (234)](https://github.com/Abhay-yadav966/Travel-agency-website/assets/115336330/986f473b-3db2-421a-b4c1-a062c5eb7a86)
-![Screenshot (233)](https://github.com/Abhay-yadav966/StudyNotion/assets/115336330/bb32c363-6dd2-4ca2-af4e-4bad4c864303)
-![Screenshot (199)](https://github.com/Abhay-yadav966/StudyNotion/assets/115336330/6106d60f-c0c1-43cc-8da5-f88e28d9bd4d)
-![Screenshot (200)](https://github.com/Abhay-yadav966/StudyNotion/assets/115336330/b4e0d291-ff35-4332-98c5-6d2f174fe58d)
+![Screenshot (233)](https://github.com/Abhay-yadav966/Gurukul/assets/115336330/bb32c363-6dd2-4ca2-af4e-4bad4c864303)
+![Screenshot (199)](https://github.com/Abhay-yadav966/Gurukul/assets/115336330/6106d60f-c0c1-43cc-8da5-f88e28d9bd4d)
+![Screenshot (200)](https://github.com/Abhay-yadav966/Gurukul/assets/115336330/b4e0d291-ff35-4332-98c5-6d2f174fe58d)
 
 ## Important
 - Backend is in the server folder.
@@ -45,4 +45,4 @@ The Swagger documentation for the StudyNotion backend is available at the follow
 ## Installation
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://studynotion-e-dtech-platform.vercel.app/
+   git clone https://Gurukul-e-dtech-platform.vercel.app/

@@ -66,8 +66,8 @@ const Instructor = () => {
   return (
     <div className='py-10' >
         <div className='flex flex-col gap-2' >
-            <h2 className="text-2xl font-bold text-richblack-5" >Hi {user?.firstName} 👋</h2>
-            <p className="font-semibold text-richblack-200" >Let's start something new</p>
+            <h2 className="text-2xl font-bold text-black" >Hi {user?.firstName} 👋</h2>
+            <p className="font-semibold text-black" >Let's start something new</p>
         </div>
 
         {
@@ -82,31 +82,31 @@ const Instructor = () => {
                             <InstructorChart courses={instructorData} />
 
                             {/* Statistics */}
-                            <div className="flex min-w-[250px] h-fit flex-col rounded-md bg-richblack-800 p-6" >
-                                <p className="text-lg font-bold text-richblack-5" >Statistics</p>
+                            <div className="flex min-w-[250px] h-fit flex-col rounded-md bg-white border border-black p-6" >
+                                <p className="text-lg font-bold text-black" >Statistics</p>
                                 <div>
-                                    <p className="text-lg text-richblack-200" >Total Courses</p>
-                                    <p className="text-3xl font-semibold text-richblack-50" >{courses.length}</p>
+                                    <p className="text-lg text-richblack-300" >Total Courses</p>
+                                    <p className="text-3xl font-semibold text-black" >{courses.length}</p>
                                 </div>
 
                                 <div>
-                                    <p className="text-lg text-richblack-200" >Total Students</p>
-                                    <p className="text-3xl font-semibold text-richblack-50" >{totalStudents} students</p>
+                                    <p className="text-lg text-richblack-300" >Total Students</p>
+                                    <p className="text-3xl font-semibold text-black" >{totalStudents} students</p>
                                 </div>
 
                                 <div>
-                                    <p className="text-lg text-richblack-200" >Total Income</p>
-                                    <p className="text-3xl font-semibold text-richblack-50" >{totalAmount}</p>
+                                    <p className="text-lg text-richblack-300" >Total Income</p>
+                                    <p className="text-3xl font-semibold text-black" >{totalAmount}</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* courses */}
-                        <div className="rounded-md bg-richblack-800 p-6" >
+                        <div className="rounded-md bg-white border border-black p-6" >
                             <div className="flex items-center justify-between" >
-                                <p className="text-lg font-bold text-richblack-5" >Your Courses</p>
+                                <p className="text-lg font-bold text-black" >Your Courses</p>
                                 <Link to={"/dashboard/my-courses"}>
-                                    <p className="text-xs font-semibold text-yellow-50" >View all</p>
+                                    <p className="text-xs font-semibold text-yellow-200" >View all</p>
                                 </Link>
                             </div>
 
@@ -116,7 +116,7 @@ const Instructor = () => {
                                         <div key={course._id} className="w-1/3" >
                                             <img src={course?.thumbnail} alt="" className="h-[201px] w-full rounded-md object-cover" />
                                             <div className="mt-3 w-full" >
-                                                <p className="text-sm font-medium text-richblack-50" >{course?.courseName}</p>
+                                                <p className="text-sm font-medium text-black" >{course?.courseName}</p>
                                                 <div className="mt-1 flex items-center space-x-2" >
                                                     <p className="text-xs font-medium text-richblack-300" >{course?.studentEnrolled?.length} students</p>
                                                     <p className="text-xs font-medium text-richblack-300" >|</p>
@@ -131,10 +131,10 @@ const Instructor = () => {
                     </div>
                 ) : 
                 (
-                    <div className="mt-20 rounded-md bg-richblack-800 p-6 py-20" >
-                        <p className="text-center text-2xl font-bold text-richblack-5" >You have not created any courses yet</p>
+                    <div className="mt-20 rounded-md bg-white border border-black p-6 py-20" >
+                        <p className="text-center text-2xl font-bold text-black" >You have not created any courses yet</p>
                         <Link to={"/dashboard/add-course"} >
-                            <p className='mt-1 text-center text-lg font-semibold text-yellow-50' >Create a Course</p>
+                            <p className='mt-1 text-center text-lg font-semibold text-yellow-200' >Create a Course</p>
                         </Link>
                     </div>
                 )

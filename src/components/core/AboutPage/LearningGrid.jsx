@@ -11,7 +11,7 @@ const LearningGrid = () => {
             {/* left */}
             <div className='flex flex-col gap-3 w-[44%] ' >
                 <h1 className='font-semibold text-4xl text-richblack-5 ' >World-Class Learning for <HighLightedText text={"Anyone, Anywhere"} /></h1>
-                <p className='font-medium text-base text-richblack-300 mb-2 ' >Studynotion partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.</p>
+                <p className='font-medium text-base text-richblack-300 mb-2 ' >Gurukul partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.</p>
                 <CTAbutton active={true} linkto={"/"} >
                     Learn More
                 </CTAbutton>
